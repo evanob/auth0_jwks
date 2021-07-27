@@ -6,16 +6,16 @@ defmodule Auth0Jwks.MixProject do
       app: :auth0_jwks,
       name: "Auth0 JWKs",
       description: "🔌 An Auth0 plug for Elixir meant to help you decode and user Auth0 JWKs",
-      version: "0.3.0",
+      version: "0.4.0",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      source_url: "https://github.com/bechurch/auth0_jwks",
-      homepage_url: "https://github.com/bechurch/auth0_jwks",
+      source_url: "https://github.com/evanob/auth0_jwks",
+      homepage_url: "https://github.com/evanob/auth0_jwks",
       package: [
-        maintainers: ["Ben Church"],
+        maintainers: ["Evan O'Brien"],
         licenses: ["MIT"],
-        links: %{"GitHub" => "https://github.com/bechurch/auth0_jwks"}
+        links: %{"GitHub" => "https://github.com/evanob/auth0_jwks"}
       ]
     ]
   end
