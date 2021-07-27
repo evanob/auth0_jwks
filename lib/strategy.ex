@@ -1,4 +1,8 @@
 defmodule Auth0Jwks.Strategy do
   use JokenJwks.DefaultStrategyTemplate
-  def init_opts(opts), do: Keyword.merge(opts, jwks_url: Auth0Jwks.Config.jwks_url())
+
+  def init_opts(opts) do
+    opts
+    |> Keyword.merge(Auth0Jwks.Config.jwks_opts())
+  end
 end
